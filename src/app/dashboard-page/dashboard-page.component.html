@@ -1,0 +1,23 @@
+<div class="options">
+	<mat-slide-toggle
+		[checked]="reverseNames"
+		(change)="reverseNames = $event.checked"
+	>
+		Reverse Client Names
+	</mat-slide-toggle>
+	<mat-slide-toggle [checked]="orderNames" (change)="orderNames = $event.checked">
+		Sort Client Names
+	</mat-slide-toggle>
+</div>
+
+<mat-tab-group>
+  <mat-tab label="Clients">
+    <client-list
+      [reverseNames]="reverseNames"
+      [orderNames]="orderNames"
+    ></client-list>
+  </mat-tab>
+  <mat-tab label="Projects">
+		<project-list></project-list>
+	</mat-tab>
+</mat-tab-group>

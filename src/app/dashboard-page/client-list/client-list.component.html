@@ -1,0 +1,12 @@
+<div class="clients">
+  <!-- How would you only show the first 100 clients? -->
+  <a
+    class="client"
+    *ngFor="let client of clients"
+    [routerLink]="'/client/' + client.id"
+  >
+		<img [src]="client.profile" *ngIf="client.profile" loading="lazy">
+		<!-- How would you transform the name so the last name comes before the first name? But only if 'reverseNames' is true -->
+    {{ client.name }}
+  </a>
+</div>

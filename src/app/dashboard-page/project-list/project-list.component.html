@@ -1,0 +1,10 @@
+<div class="projects">
+	<!-- What performance optimizations would be good here? trackBy?-->
+  <a
+    class="project"
+    *ngFor="let project of projects"
+    [routerLink]="'/project/' + project.id"
+  >
+    {{ project.name }}
+  </a>
+</div>

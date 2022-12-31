@@ -1,0 +1,29 @@
+
+.clients {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	padding: 1rem;
+
+	.client {
+		display: flex;
+		height: 4rem;
+		background-color: #ffffff;
+		border-radius: 10px;
+		align-items: center;
+		justify-content: flex-start;
+		text-decoration: none;
+		color: #333333;
+		font-size: 1.2rem;
+		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+		// Can you add some styling for hoving over the client?
+	}
+}
+
+
+img {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	margin: 1rem;
+}
