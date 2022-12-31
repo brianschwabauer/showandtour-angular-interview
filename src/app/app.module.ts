@@ -6,6 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatRippleModule } from '@angular/material/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { ProjectPageComponent } from './project-page/project-page.component';
     ReactiveFormsModule,
     MatTabsModule,
     MatSlideToggleModule,
+    MatRippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

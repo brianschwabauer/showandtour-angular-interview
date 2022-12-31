@@ -4,9 +4,10 @@
     class="client"
     *ngFor="let client of clients"
     [routerLink]="'/client/' + client.id"
+    mat-ripple
   >
-		<img [src]="client.profile" *ngIf="client.profile" loading="lazy">
-		<!-- How would you transform the name so the last name comes before the first name? But only if 'reverseNames' is true -->
+    <img [src]="client.profile" *ngIf="client.profile" loading="lazy" />
+    <!-- How would you transform the name so the last name comes before the first name? But only if 'reverseNames' is true -->
     {{ client.name }}
   </a>
 </div>
