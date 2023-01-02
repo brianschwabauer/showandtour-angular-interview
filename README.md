@@ -16,3 +16,7 @@ npm run start
 ```
 
 After the code is up and running, you should navigate a browser to http://localhost:4200
+
+## Running on StackBlitz
+
+[View on StackBlitz](https://stackblitz.com/edit/showandtour-angular-interview)
